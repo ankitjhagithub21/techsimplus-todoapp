@@ -4,10 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+svg{
+  cursor: pointer;
 }
 
 body{
-  font-family: "Roboto", sans-serif;
+ 
   width: 100%;
    padding: 20px;
 }
@@ -39,10 +43,9 @@ li{
   
   width: 100%;
   padding: 8px 10px;
-  color: white;
   border: none;
   outline: none;
-  background-color: rgb(138, 131, 131);
+  background-color: rgb(197, 192, 192);
   border-radius: 30px;
 }
 li{
@@ -51,6 +54,10 @@ li{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #6c5ce7;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 

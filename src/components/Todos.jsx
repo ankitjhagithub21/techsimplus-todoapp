@@ -19,7 +19,8 @@ const Todos = () => {
         setTodos(todos.filter((todo, index) => index != idx))
     }
     const handleKeyUp = (e) => {
-        if (e.key == "enter") {
+       
+        if (e.key == "Enter") {
             if (todos.includes(todo)) {
                 return toast.error("Task already exist.")
             }
