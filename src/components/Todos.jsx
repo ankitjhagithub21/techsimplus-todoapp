@@ -35,15 +35,15 @@ const Todos = () => {
             <div className='input'>
                 <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} onKeyUp={handleKeyUp} />
 
-                <FaPlus onClick={addTodo} />
+                <FaPlus onClick={addTodo} color="green" size={25}/>
 
             </div>
 
             <ul>
                 {
                     todos.map((todo, index) => {
-                        return <li key={index}> {index}.{todo}
-                            <IoMdClose onClick={() => removeTodo(index)} />
+                        return <li key={index}> {index+1}.{todo}
+                            <IoMdClose onClick={() => removeTodo(index)} color='red'/>
                         </li>
                     })
                 }

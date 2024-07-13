@@ -9,28 +9,53 @@
 body{
   font-family: "Roboto", sans-serif;
   width: 100%;
-  
-}
-
-li{
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
+   padding: 20px;
 }
 .container{
   width: 500px;
   margin: auto;
   margin-top: 50px;
 }
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
 .input{
   display: flex;
-}
-.input input{
-  padding: 5px;
-  border: none;
-  outline: none;
-  background-color: whitesmoke;
-  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
+
+li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.input input{
+  
+  width: 100%;
+  padding: 8px 10px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgb(138, 131, 131);
+  border-radius: 30px;
+}
+li{
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media (max-width:768px) {
+  .container{
+    width: 100%;
+  }
+}
