@@ -7,6 +7,9 @@ const Todos = () => {
     const [todos, setTodos] = useState([])
 
     const addTodo = () => {
+        if(todo.length==0){
+            return toast.error("Can not add empty task.")
+        }
         if (todos.includes(todo)) {
             return toast.error("Task already exist.")
         }
@@ -20,6 +23,9 @@ const Todos = () => {
         toast.success("Task removed")
     }
     const handleKeyUp = (e) => {
+        if(todo.length==0){
+            return toast.error("Can not add empty task.")
+        }
        
         if (e.key == "Enter") {
             if (todos.includes(todo)) {
