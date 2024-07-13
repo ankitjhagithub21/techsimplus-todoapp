@@ -17,6 +17,7 @@ const Todos = () => {
     }
     const removeTodo = (idx) => {
         setTodos(todos.filter((todo, index) => index != idx))
+        toast.success("Task removed")
     }
     const handleKeyUp = (e) => {
        
