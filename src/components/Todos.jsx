@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
-import { FaPlus } from "react-icons/fa"
-import { IoMdClose } from "react-icons/io";
+import { FaPlus, FaTrash } from "react-icons/fa"
+
 const Todos = () => {
     const [todo, setTodo] = useState('')
     const [todos, setTodos] = useState([])
@@ -51,7 +51,7 @@ const Todos = () => {
                 {
                     todos.map((todo, index) => {
                         return <li key={index}> {index+1}.{todo}
-                            <IoMdClose onClick={() => removeTodo(index)} color='red'/>
+                            <FaTrash onClick={() => removeTodo(index)} color='red'/>
                         </li>
                     })
                 }
