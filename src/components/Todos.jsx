@@ -50,7 +50,7 @@ const Todos = () => {
             <ul>
                 {
                     todos.map((todo, index) => {
-                        return <li key={index}> {index+1}.{todo}
+                        return <li key={index}> {index+1}. {todo}
                             <FaTrash onClick={() => removeTodo(index)} color='red'/>
                         </li>
                     })

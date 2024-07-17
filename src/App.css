@@ -44,11 +44,11 @@ li{
   
   width: 100%;
   padding: 8px 14px;
-  border: none;
+  border: 2px solid #6c5ce7;
   outline: none;
-  background-color: rgb(235, 228, 228);
-  border-radius: 30px;
-  font-size: 16px;
+  /* background-color: rgb(235, 228, 228); */
+  border-radius: 10px;
+  font-size: 18px;
 }
 li{
   font-size: 20px;
